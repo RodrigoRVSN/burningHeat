@@ -1,6 +1,6 @@
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -14,8 +14,8 @@ model User {
   avatar_url String
   login      String
 
-  @@map("users")
   messages Message[]
+  @@map("users")
 }
 
 model Message {
@@ -25,6 +25,6 @@ model Message {
 
   user User @relation(fields: [user_id], references: [id])
 
-  @@map("messages")
   user_id String
+  @@map("messages")
 }
