@@ -7,9 +7,9 @@ import { ContentWrapper } from "./styles";
 
 function App() {
   const { user } = useContext(AuthContext);
-  
+
   return (
-    <ContentWrapper>
+    <ContentWrapper className={!!user ? "contentSigned" : ""}>
       <MessageList />
       {!!user ? <SendMessageForm /> : <LoginBox />}
     </ContentWrapper>
