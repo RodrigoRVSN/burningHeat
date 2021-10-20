@@ -34,9 +34,9 @@ export const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar{
     background: #202024;
+    width: 0.4rem;
   }
   ::-webkit-scrollbar-thumb{
-    width: 0.2rem;
     background: linear-gradient(104.3deg, #ff008e 0.48%, #ffcd1e 100%);
   }
 `;

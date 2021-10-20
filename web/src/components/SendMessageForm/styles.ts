@@ -28,6 +28,15 @@ export const SendMessageContentWrapper = styled.div`
       filter: brightness(0.8);
     }
   }
+
+  @media (max-width: 1090px) {
+    margin-top: 5rem;
+    width: 60vw;
+  }
+
+  @media (max-width: 660px) {
+    width: 90vw;
+  }
 `;
 
 export const UserInformation = styled.header`

@@ -12,7 +12,15 @@ export const ContentWrapper = styled.main`
   column-gap: 120px;
   position: relative;
 
-  &::before {
+  @media (max-width: 1090px) {
+    display: flex;
+    flex-direction: column;
+    &.contentSigned::before {
+      width: 16.25rem;
+    }
+  }
+
+  &.contentSigned::before {
     content: "";
     height: 100vh;
     width: 26.25rem;

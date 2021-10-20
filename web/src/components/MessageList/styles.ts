@@ -6,9 +6,9 @@ export const MessageListWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  img {
+  > img {
     height: 1.75rem;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
   }
 
   ul {
@@ -22,13 +22,14 @@ export const MessageListWrapper = styled.div`
 
     li {
       max-width: 27.5rem;
+      animation: up 1s;
 
       &:nth-child(2) {
         margin-left: 10rem;
       }
 
       p {
-        font-size: 20px;
+        font-size: 1.4rem;
         line-height: 28px;
       }
 
@@ -56,6 +57,16 @@ export const MessageListWrapper = styled.div`
           margin-left: 12px;
           font-size: 16px;
         }
+      }
+    }
+
+    @keyframes up {
+      from {
+        opacity: 0.6;
+      }
+
+      to {
+        opacity: 1;
       }
     }
   }
