@@ -12,6 +12,7 @@ interface MessagesProps {
   user: {
     avatar_url: string;
     name: string;
+    login: string;
   };
 }
 
@@ -57,12 +58,15 @@ export function MessageList() {
         {messages.map((message) => (
           <li key={message.id}>
             <p>{message.text}</p>
-            <div>
+            <a
+              target="_blank"
+              href={`https://github.com/${message.user.login}`}
+            >
               <div>
                 <img src={message.user.avatar_url} alt={message.user.name} />
               </div>
               <span>{message.user.name}</span>
-            </div>
+            </a>
           </li>
         ))}
       </ul>

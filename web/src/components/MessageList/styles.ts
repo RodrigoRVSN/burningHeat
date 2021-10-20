@@ -33,10 +33,12 @@ export const MessageListWrapper = styled.div`
         line-height: 28px;
       }
 
-      div {
+      a {
         margin-top: 1rem;
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.white};
 
         div {
           padding: 0.125rem;
