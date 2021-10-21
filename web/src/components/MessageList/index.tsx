@@ -56,7 +56,7 @@ export function MessageList() {
 
       <ul>
         {messages.map((message) => (
-          <li key={message.id}>
+          <li key={String(message.id)}>
             <p>{message.text}</p>
             <a
               target="_blank"
