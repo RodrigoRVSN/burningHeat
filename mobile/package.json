@@ -9,7 +9,6 @@
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.0",
     "@react-native-async-storage/async-storage": "~1.15.0",
-    "@types/styled-components": "^5.1.15",
     "axios": "^0.23.0",
     "expo": "~42.0.1",
     "expo-app-loading": "1.1.2",

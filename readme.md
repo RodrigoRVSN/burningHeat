@@ -1,5 +1,3 @@
-🚧 IN PROGRESS
-
 # burningHeat 
 
 <!--- https://shields.io --->
@@ -21,31 +19,51 @@ ___
 ___
 ## 💻 Prerequisites
 
+
+> 💻 Frontend
+- Install LTS Node version.
+
+> 💾 Backend (server Node)
 - Install LTS Node version.
 - Install Docker
+
+> 📱 Mobile
+- Install Expo CLI
+
+> ☁ Backend (Elixir)
+- Install Docker
+- Install Elixir (> 1.12) + Erlang + Phoenix
+
 <!--- #################### mudar pré-requisitos  ####################--->
 ___
 ## 🛠 Tools used
 
-> Frontend
+> 💻 Frontend
 - Vite
 - Typescript
-- Socket.io client
 - Styled components
+- Socket.io
 - Axios
 
-> Backend (server Node)
+> 💾 Backend (server Node)
 - Node
 - Typescript
+- Docker
+- Postgres
 - Socket.io
 - Prisma
 - JWT
 - Axios
 
-> Mobile 🚧 IN PROGRESS
+> 📱 Mobile
+- Expo bare workflow
+- Moti
+- Socket.io
 
-> Backend (Elixir) 🚧 IN PROGRESS
-
+> ☁ Backend (Elixir)
+- Elixir
+- Phoenix
+- Quantum
 
 <!--- #################### mudar ferramentas #################### --->
 ___
@@ -54,11 +72,23 @@ ___
 To use, follow the steps:
 
 ```
-- git clone https://github.com/rodrigorvsn/burningHeat.git
+
 - yarn || npm install
 - docker-compose up + yarn/npm prisma migrate dev on /server
-- yarn dev || npm dev on /server
-- yarn dev || npm dev on /web
+
+> 💻 Frontend
+- yarn dev
+
+> 💾 Backend (server Node)
+- set environment variables
+- yarn dev
+
+> 📱 Mobile
+- expo start
+
+> ☁ Backend (Elixir)
+- mix phx.server
+
 ```
 ___
 ## 🔒 ENV Example
