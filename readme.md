@@ -11,7 +11,8 @@
 ___
 <!--- #################### mudar badges #################### --->
 
-
+![image](https://user-images.githubusercontent.com/75763403/138384808-48f0141f-0cb7-4531-b950-35afd5d2df25.png)
+![image](https://user-images.githubusercontent.com/75763403/138384791-cef93f8e-ad75-484a-8640-e750e171626d.png)
 
 <!--- #################### mudar imagem exemplo #################### --->
 ___
