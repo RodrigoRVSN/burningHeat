@@ -28,6 +28,10 @@ io.on("connection", (socket) => {
 app.use(express.json());
 app.use(router);
 
+app.get("/", (req, res) => {
+  res.send("Route test");
+});
+
 app.get("/github", (req, res) => {
   res.redirect(
     `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`

@@ -1,11 +1,16 @@
-FROM node:14
+FROM node
 
 WORKDIR /usr/app
-COPY package.json yarn.lock ./
 
-RUN yarn
+COPY package.json ./
+COPY prisma ./prisma/
+
+RUN npm install
 
 COPY . .
 
+RUN npm run build
+
+RUN npx prisma generate
 EXPOSE 4000
-CMD ["yarn", "dev"]
+CMD ["npm","run","dev"]
